@@ -14,8 +14,9 @@ html{
 #main {
 	margin: 			5px auto;
 	height: 			500px;
-	width: 				500px;
+	width: 				440px;
 	background-color:	#AAA;
+	padding: 30px
 }
 
 #button {
@@ -25,4 +26,14 @@ html{
 	width: 				500px;
 	background-color: 	#FAF;
 
+}
+
+
+.bar {
+	float : left;
+	margin:				1px;
+	width:				20px;
+	background-color: 	#F00;
+	height:				300px;
+	font-size:			5px
 }

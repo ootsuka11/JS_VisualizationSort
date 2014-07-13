@@ -4,26 +4,40 @@
 
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<title>バブルソート可視化</title>
-		
-	<!--スタイルシート-->
-	<link rel="stylesheet" type="text/css" href="./css/jquery-ui-1.10.4.css"/>
-	<link rel="stylesheet" type="text/css" href="./css/main.css"/>
 	
-	<!-- ライブラリ -->	
+	<!-- JQuery -->	
 	<script src="./lib/jquery-1.10.2.js"></script>	
 	<script src="./lib/jquery-ui-1.10.4.js"></script>	
+	<script src="./lib/jquery.tmpl.min.js"></script>
+	
 	
 	<!-- メインコンテンツ -->
 	<script src="./main.js"></script>
 	
 	
+	<!-- バーのテンプレート -->	
+	<script id="tmpl_bar" type="text/x-jquery-tmpl">
+		<div id="${id}" class="bar"> ${id} </div>
+	</script>
 
+	
+	<!--スタイルシート-->
+	<link rel="stylesheet" type="text/css" href="./css/jquery-ui-1.10.4.css"/>
+	<link rel="stylesheet" type="text/css" href="./css/main.css"/>
+	
+	
 </head>
 <body>
 	
 	<!-- タイトル -->
 	<div id="title">バブルソート可視化</div>
-	<div id="main">メインが領域</div>
+	<div id="main">
+		
+		<!-- テンプレートを挿入する為の領域 -->
+		<div id="bars">
+		</div>
+		
+	</div>
 	<div id="button">ボタン配置用領域</div>
 	
 
